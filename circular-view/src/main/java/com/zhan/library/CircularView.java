@@ -13,7 +13,6 @@ import android.support.v4.content.res.ResourcesCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
-
 /**
  * Created by Zhan on 16-01-07.
  */
@@ -42,10 +41,10 @@ public class CircularView extends View {
     private Drawable iconDrawable;
     private int icon;
 
-    private int iconTopPadding;
-    private int iconBottomPadding;
-    private int iconLeftPadding;
-    private int iconRightPadding;
+    private int iconTopPadding; //pixels
+    private int iconBottomPadding; //pixels
+    private int iconLeftPadding; //pixels
+    private int iconRightPadding; //pixels
     private Paint paint;
 
     public CircularView(Context context) {
