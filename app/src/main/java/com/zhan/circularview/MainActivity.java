@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         circularView = (CircularView) findViewById(R.id.circularView);
         circularView.setCircleColor(R.color.green);
         circularView.setIconColor(R.color.purple);
-        circularView.setIconResource(R.drawable.c_android);
         circularView.setStrokeColor(R.color.gray);
 
         init();

@@ -77,7 +77,8 @@ public class CircularView extends View {
             strokeWidth = a.getDimensionPixelSize(R.styleable.CircularView_cv_strokeWidth, dpToPx(DEFAULT_STROKE_WIDTH));
             strokeColor = a.getColor(R.styleable.CircularView_cv_strokeColor, ContextCompat.getColor(this.context, DEFAULT_STROKE_COLOR));
             strokePadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_strokePadding, dpToPx(DEFAULT_STROKE_PADDING));
-            icon = a.getResourceId(R.styleable.CircularView_cv_iconDrawable, DEFAULT_ICON);
+            //icon = a.getResourceId(R.styleable.CircularView_cv_iconDrawable, DEFAULT_ICON);
+            iconDrawable = a.getDrawable(R.styleable.CircularView_cv_iconDrawable);
             iconColor = a.getColor(R.styleable.CircularView_cv_iconColor, ContextCompat.getColor(this.context, DEFAULT_ICON_COLOR));
             iconTopPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconTopPadding, dpToPx(DEFAULT_ICON_TOP_PADDING));
             iconBottomPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconBottomPadding, dpToPx(DEFAULT_ICON_BOTTOM_PADDING));
@@ -159,7 +160,11 @@ public class CircularView extends View {
     }
 
     private void drawIcon(Canvas canvas){
-        iconDrawable = ResourcesCompat.getDrawable(context.getResources(), icon, context.getTheme());
+        //iconDrawable = ResourcesCompat.getDrawable(context.getResources(), icon, context.getTheme());
+
+        if(icon != 0){
+            iconDrawable = ResourcesCompat.getDrawable(context.getResources(), icon, context.getTheme());
+        }
 
         if(iconDrawable != null){
             Rect bounds = canvas.getClipBounds();
