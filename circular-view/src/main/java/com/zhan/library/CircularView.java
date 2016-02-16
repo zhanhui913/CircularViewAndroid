@@ -20,16 +20,16 @@ import android.view.View;
 public class CircularView extends View {
 
     //Default values
-    private final static int DEFAULT_BG_RADIUS = 50; //pixels
+    private final static int DEFAULT_BG_RADIUS = 50; //DP
     private final static int DEFAULT_BG_COLOR = R.color.black;
-    private final static int DEFAULT_STROKE_WIDTH = 0; //pixels
+    private final static int DEFAULT_STROKE_WIDTH = 0; //DP
     private final static int DEFAULT_STROKE_COLOR = R.color.black;
-    private final static int DEFAULT_STROKE_PADDING = 0; //pixels
+    private final static int DEFAULT_STROKE_PADDING = 0; //DP
     private final static int DEFAULT_ICON_COLOR = R.color.white;
-    private final static int DEFAULT_ICON_TOP_PADDING = 10; //pixels
-    private final static int DEFAULT_ICON_BOTTOM_PADDING = 10; //pixels
-    private final static int DEFAULT_ICON_LEFT_PADDING = 10; //pixels
-    private final static int DEFAULT_ICON_RIGHT_PADDING = 10; //pixels
+    private final static int DEFAULT_ICON_TOP_PADDING = 10; //DP
+    private final static int DEFAULT_ICON_BOTTOM_PADDING = 10; //DP
+    private final static int DEFAULT_ICON_LEFT_PADDING = 10; //DP
+    private final static int DEFAULT_ICON_RIGHT_PADDING = 10; //DP
     private final static int DEFAULT_ICON = R.drawable.ic_smile;
 
     private Context context;
@@ -73,17 +73,17 @@ public class CircularView extends View {
 
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.CircularView, 0, 0);
         try{
-            circleRadius = a.getDimensionPixelSize(R.styleable.CircularView_cv_bgRadius, DEFAULT_BG_RADIUS);
+            circleRadius = a.getDimensionPixelSize(R.styleable.CircularView_cv_bgRadius, dpToPx(DEFAULT_BG_RADIUS));
             circleColor = a.getColor(R.styleable.CircularView_cv_bgColor, ContextCompat.getColor(this.context, DEFAULT_BG_COLOR));
-            strokeWidth = a.getDimensionPixelSize(R.styleable.CircularView_cv_strokeWidth, DEFAULT_STROKE_WIDTH);
+            strokeWidth = a.getDimensionPixelSize(R.styleable.CircularView_cv_strokeWidth, dpToPx(DEFAULT_STROKE_WIDTH));
             strokeColor = a.getColor(R.styleable.CircularView_cv_strokeColor, ContextCompat.getColor(this.context, DEFAULT_STROKE_COLOR));
-            strokePadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_strokePadding, DEFAULT_STROKE_PADDING);
+            strokePadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_strokePadding, dpToPx(DEFAULT_STROKE_PADDING));
             icon = a.getResourceId(R.styleable.CircularView_cv_iconDrawable, DEFAULT_ICON);
             iconColor = a.getColor(R.styleable.CircularView_cv_iconColor, ContextCompat.getColor(this.context, DEFAULT_ICON_COLOR));
-            iconTopPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconTopPadding, DEFAULT_ICON_TOP_PADDING);
-            iconBottomPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconBottomPadding, DEFAULT_ICON_BOTTOM_PADDING);
-            iconLeftPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconLeftPadding, DEFAULT_ICON_LEFT_PADDING);
-            iconRightPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconRightPadding, DEFAULT_ICON_RIGHT_PADDING);
+            iconTopPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconTopPadding, dpToPx(DEFAULT_ICON_TOP_PADDING));
+            iconBottomPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconBottomPadding, dpToPx(DEFAULT_ICON_BOTTOM_PADDING));
+            iconLeftPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconLeftPadding, dpToPx(DEFAULT_ICON_LEFT_PADDING));
+            iconRightPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconRightPadding, dpToPx(DEFAULT_ICON_RIGHT_PADDING));
         }finally {
             a.recycle();
         }
@@ -142,7 +142,6 @@ public class CircularView extends View {
 
         drawCircle(canvas, circleRadius, viewWidthHalf, viewHeightHalf);
         drawIcon(canvas);
-        invalidate();
     }
 
     private void drawCircle(Canvas canvas, int radius, int width, int height){
@@ -189,11 +188,12 @@ public class CircularView extends View {
     //////////////////////////////////////////////////////
 
     public int getCircleRadius() {
-        return circleRadius;
+        return pxToDp(circleRadius);
     }
 
     public void setCircleRadius(int circleRadius) {
         this.circleRadius = dpToPx(circleRadius);
+        requestLayout();
         invalidate();
     }
 
@@ -216,6 +216,7 @@ public class CircularView extends View {
 
     public void setStrokeWidth(int strokeWidth) {
         this.strokeWidth = dpToPx(strokeWidth);
+        requestLayout();
         invalidate();
     }
 
@@ -234,6 +235,7 @@ public class CircularView extends View {
 
     public void setStrokePadding(int strokePadding) {
         this.strokePadding = dpToPx(strokePadding);
+        requestLayout();
         invalidate();
     }
 
