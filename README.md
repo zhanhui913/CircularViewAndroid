@@ -13,7 +13,7 @@ Gradle
 
 ```groovy
     dependencies {
-      compile 'com.github.zhanhui913:circular-view:0.2.0'
+      compile 'com.github.zhanhui913:circular-view:0.2.1'
     }
 ```
     
@@ -24,7 +24,7 @@ Maven
 <dependency>
   <groupId>com.github.zhanhui913</groupId>
   <artifactId>circular-view</artifactId>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
 </dependency>
 
 ```
