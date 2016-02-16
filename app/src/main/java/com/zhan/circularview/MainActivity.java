@@ -3,7 +3,6 @@ package com.zhan.circularview;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,8 +11,6 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.zhan.library.CircularView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,8 +86,7 @@ public class MainActivity extends AppCompatActivity {
         topSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                Log.d("MAIN", "top value is now " + progress);
-                circularView.setIconTopPadding(progress);
+                circularView.setIconTopPaddingInDP(progress);
                 topPaddingValue.setText(""+progress);
             }
 
@@ -108,8 +104,7 @@ public class MainActivity extends AppCompatActivity {
         bottomSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                Log.d("MAIN", "bottom value is now " + progress);
-                circularView.setIconBottomPadding(progress);
+                circularView.setIconBottomPaddingInDP(progress);
                 bottomPaddingValue.setText(""+progress);
             }
 
@@ -127,8 +122,7 @@ public class MainActivity extends AppCompatActivity {
         leftSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                Log.d("MAIN", "left value is now " + progress);
-                circularView.setIconLeftPadding(progress);
+                circularView.setIconLeftPaddingInDP(progress);
                 leftPaddingValue.setText(""+progress);
             }
 
@@ -146,8 +140,7 @@ public class MainActivity extends AppCompatActivity {
         rightSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                Log.d("MAIN", "right value is now "+progress);
-                circularView.setIconRightPadding(progress);
+                circularView.setIconRightPaddingInDP(progress);
                 rightPaddingValue.setText(""+progress);
             }
 
@@ -165,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
         strokeWidthSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setStrokeWidth(progress);
+                circularView.setStrokeWidthInDP(progress);
                 strokeWidthValue.setText(""+progress);
             }
 
@@ -183,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         strokePaddingSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setStrokePadding(progress);
+                circularView.setStrokePaddingInDP(progress);
                 strokePaddingValue.setText(""+progress);
             }
 
@@ -201,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
         circleRadiusSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setCircleRadius(progress);
+                circularView.setCircleRadiusInDP(progress);
                 circleRadiusValue.setText(""+progress);
             }
 
@@ -219,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                circularView.setIconResource(R.drawable.c_airplane);
+                circularView.setIconResource(R.drawable.white);
             }
         });
 

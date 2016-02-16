@@ -163,13 +163,12 @@ public class CircularView extends View {
         iconDrawable = ResourcesCompat.getDrawable(context.getResources(), icon, context.getTheme());
 
         if(iconDrawable != null){
-
             Rect bounds = canvas.getClipBounds();
 
-            bounds.left += iconLeftPadding;
-            bounds.right -= iconRightPadding;
-            bounds.top += iconTopPadding;
-            bounds.bottom -= iconBottomPadding;
+            bounds.left += (iconLeftPadding + strokeWidth + strokePadding);
+            bounds.right -= (iconRightPadding + strokeWidth + strokePadding);
+            bounds.top += (iconTopPadding + strokeWidth + strokePadding);
+            bounds.bottom -= (iconBottomPadding + strokeWidth + strokePadding);
 
             iconDrawable.setBounds(bounds);
             iconDrawable.mutate().setColorFilter(iconColor, PorterDuff.Mode.SRC_IN);
@@ -187,20 +186,54 @@ public class CircularView extends View {
     // Circle
     //////////////////////////////////////////////////////
 
-    public int getCircleRadius() {
+    /**
+     * Retrieve the circle's radius in dp
+     * @return the circle's radius in dp
+     */
+    public int getCircleRadiusInDP() {
         return pxToDp(circleRadius);
     }
 
-    public void setCircleRadius(int circleRadius) {
-        this.circleRadius = dpToPx(circleRadius);
+    /**
+     * Retrieve the circle's radius in px
+     * @return the circle's radius in px
+     */
+    public int getCircleRadiusInPX(){
+        return this.circleRadius;
+    }
+
+    /**
+     * Set the circle's radius using dp format
+     * @param dp the intended new circle radius in dp format
+     */
+    public void setCircleRadiusInDP(int dp) {
+        this.circleRadius = dpToPx(dp);
         requestLayout();
         invalidate();
     }
 
+    /**
+     * Set the circle's radius using px format
+     * @param px the intended new circle radius in dp format
+     */
+    public void setCircleRadiusInPX(int px){
+        this.circleRadius = px;
+        requestLayout();
+        invalidate();
+    }
+
+    /**
+     * Retrieve the circle's background color in R.color format
+     * @return R.color format in int
+     */
     public int getCircleColor() {
         return circleColor;
     }
 
+    /**
+     * Set the circle's background color using R.color format
+     * @param circleColor the intended new circle background color
+     */
     public void setCircleColor( int circleColor) {
         this.circleColor = ContextCompat.getColor(getContext(), circleColor);
         invalidate();
@@ -210,31 +243,91 @@ public class CircularView extends View {
     // Stroke
     //////////////////////////////////////////////////////
 
-    public int getStrokeWidth() {
+    /**
+     * Retrieve the circle's stroke width in dp
+     * @return the circle's stroke width in dp
+     */
+    public int getStrokeWidthInDP() {
         return pxToDp(strokeWidth);
     }
 
-    public void setStrokeWidth(int strokeWidth) {
-        this.strokeWidth = dpToPx(strokeWidth);
+    /**
+     * Retrieve the circle's stroke width in px
+     * @return the circle's stroke width in px
+     */
+    public int getStrokeWidthInPX() {
+        return this.strokeWidth;
+    }
+
+    /**
+     * Set the circle's stroke width using dp format
+     * @param dp the intended new circle stroke in dp format
+     */
+    public void setStrokeWidthInDP(int dp) {
+        this.strokeWidth = dpToPx(dp);
         requestLayout();
         invalidate();
     }
 
+    /**
+     * Set the circle's stroke width using px format
+     * @param px the intended new circle stroke in px format
+     */
+    public void setStrokeWidthInPX(int px) {
+        this.strokeWidth = px;
+        requestLayout();
+        invalidate();
+    }
+
+    /**
+     * Retrieve the circle's stroke color in R.color format
+     * @return R.color format in int
+     */
     public int getStrokeColor() {
         return strokeColor;
     }
 
+    /**
+     * Set the circle's stroke color using R.color format
+     * @param strokeColor the intended new circle stroke color
+     */
     public void setStrokeColor(int strokeColor) {
         this.strokeColor = ContextCompat.getColor(getContext(), strokeColor);
         invalidate();
     }
 
-    public int getStrokePadding() {
+    /**
+     * Retrieve the circle's stroke padding width in dp
+     * @return the circle's stroke padding width in dp
+     */
+    public int getStrokePaddingInDP() {
         return pxToDp(strokePadding);
     }
 
-    public void setStrokePadding(int strokePadding) {
-        this.strokePadding = dpToPx(strokePadding);
+    /**
+     * Retrieve the circle's stroke padding width in px
+     * @return the circle's stroke padding width in px
+     */
+    public int getStrokePaddingInPX() {
+        return this.strokePadding;
+    }
+
+    /**
+     * Set the circle's stroke padding width using dp format
+     * @param dp the intended new circle stroke padding in dp format
+     */
+    public void setStrokePaddingInDP(int dp) {
+        this.strokePadding = dpToPx(dp);
+        requestLayout();
+        invalidate();
+    }
+
+    /**
+     * Set the circle's stroke padding width using px format
+     * @param px the intended new circle stroke padding in px format
+     */
+    public void setStrokePaddingInPX(int px) {
+        this.strokePadding = px;
         requestLayout();
         invalidate();
     }
@@ -243,61 +336,177 @@ public class CircularView extends View {
     // Icon
     //////////////////////////////////////////////////////
 
+    /**
+     * Retrieve the icon's color in R.color format
+     * @return R.color format in int
+     */
     public int getIconColor() {
         return iconColor;
     }
 
+    /**
+     * Set the icon color using R.color format
+     * @param iconColor the intended new icon color
+     */
     public void setIconColor(int iconColor) {
         this.iconColor = ContextCompat.getColor(getContext(), iconColor);
         invalidate();
     }
 
+    /**
+     * Retrieve the icon's resource in R.drawable format
+     * @return R.drawable format in int
+     */
     public int getIconResource(){
         return this.icon;
     }
 
+    /**
+     * Set the icon resource using R.drawable format
+     * @param icon the intended new icon resource
+     */
     public void setIconResource(int icon){
         this.icon = icon;
         invalidate();
     }
 
     //////////////////////////////////////////////////////
-    // Icon Paddings
+    // Icon Padding
     //////////////////////////////////////////////////////
 
-    public int getIconTopPadding() {
+    /**
+     * Retrieve the icon's top padding in dp
+     * @return the icon's top padding in dp
+     */
+    public int getIconTopPaddingInDP() {
         return pxToDp(iconTopPadding);
     }
 
-    public void setIconTopPadding(int iconTopPadding) {
-        this.iconTopPadding = dpToPx(iconTopPadding);
+    /**
+     * Set the icon's top padding using dp format
+     * @param dp the intended new icon's top padding in dp format
+     */
+    public void setIconTopPaddingInDP(int dp) {
+        this.iconTopPadding = dpToPx(dp);
         invalidate();
     }
 
-    public int getIconBottomPadding() {
+    /**
+     * Retrieve the icon's top padding in px
+     * @return the icon's top padding in px
+     */
+    public int getIconTopPaddingInPX() {
+        return this.iconTopPadding;
+    }
+
+    /**
+     * Set the icon's top padding using px format
+     * @param px the intended new icon's top padding in px format
+     */
+    public void setIconTopPaddingInPX(int px) {
+        this.iconTopPadding = px;
+        invalidate();
+    }
+
+    /**
+     * Retrieve the icon's bottom padding in dp
+     * @return the icon's bottom padding in dp
+     */
+    public int getIconBottomPaddingInDP() {
         return pxToDp(iconBottomPadding);
     }
 
-    public void setIconBottomPadding(int iconBottomPadding) {
-        this.iconBottomPadding = dpToPx(iconBottomPadding);
+    /**
+     * Set the icon's bottom padding using dp format
+     * @param dp the intended new icon's bottom padding in dp format
+     */
+    public void setIconBottomPaddingInDP(int dp) {
+        this.iconBottomPadding = dpToPx(dp);
         invalidate();
     }
 
-    public int getIconLeftPadding() {
+    /**
+     * Retrieve the icon's bottom padding in px
+     * @return the icon's bottom padding in px
+     */
+    public int getIconBottomPaddingInPX() {
+        return this.iconBottomPadding;
+    }
+
+    /**
+     * Set the icon's bottom padding using px format
+     * @param px the intended new icon's bottom padding in px format
+     */
+    public void setIconBottomPaddingInPX(int px) {
+        this.iconBottomPadding = px;
+        invalidate();
+    }
+
+    /**
+     * Retrieve the icon's left padding in dp
+     * @return the icon's left padding in dp
+     */
+    public int getIconLeftPaddingInDP() {
         return pxToDp(iconLeftPadding);
     }
 
-    public void setIconLeftPadding(int iconLeftPadding) {
-        this.iconLeftPadding = dpToPx(iconLeftPadding);
+    /**
+     * Set the icon's left padding using dp format
+     * @param dp the intended new icon's left padding in dp format
+     */
+    public void setIconLeftPaddingInDP(int dp) {
+        this.iconLeftPadding = dpToPx(dp);
         invalidate();
     }
 
-    public int getIconRightPadding() {
+    /**
+     * Retrieve the icon's left padding in px
+     * @return the icon's left padding in px
+     */
+    public int getIconLeftPaddingInPX() {
+        return this.iconLeftPadding;
+    }
+
+    /**
+     * Set the icon's left padding using px format
+     * @param px the intended new icon's left padding in px format
+     */
+    public void setIconLeftPaddingInPX(int px) {
+        this.iconLeftPadding = px;
+        invalidate();
+    }
+
+    /**
+     * Retrieve the icon's right padding in dp
+     * @return the icon's right padding in dp
+     */
+    public int getIconRightPaddingInDP() {
         return pxToDp(iconRightPadding);
     }
 
-    public void setIconRightPadding(int iconRightPadding) {
-        this.iconRightPadding = dpToPx(iconRightPadding);
+    /**
+     * Set the icon's right padding using dp format
+     * @param dp the intended new icon's right padding in dp format
+     */
+    public void setIconRightPaddingInDP(int dp) {
+        this.iconRightPadding = dpToPx(dp);
+        invalidate();
+    }
+
+    /**
+     * Retrieve the icon's right padding in px
+     * @return the icon's right padding in px
+     */
+    public int getIconRightPaddingInPX() {
+        return this.iconRightPadding;
+    }
+
+    /**
+     * Set the icon's right padding using px format
+     * @param px the intended new icon's right padding in px format
+     */
+    public void setIconRightPaddingInPX(int px) {
+        this.iconRightPadding = px;
         invalidate();
     }
 

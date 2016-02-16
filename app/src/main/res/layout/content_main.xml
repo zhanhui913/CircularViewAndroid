@@ -250,21 +250,21 @@
                 <ImageButton
                     android:id="@+id/iconButton1"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_weight="0.33"
-                    android:src="@drawable/c_airplane"/>
+                    android:src="@drawable/white"/>
 
                 <ImageButton
                     android:id="@+id/iconButton2"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_weight="0.33"
                     android:src="@drawable/c_bowtie"/>
 
                 <ImageButton
                     android:id="@+id/iconButton3"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_weight="0.33"
                     android:src="@drawable/c_camera"/>
             </LinearLayout>
