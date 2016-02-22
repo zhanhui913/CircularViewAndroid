@@ -30,6 +30,8 @@ public class CircularView extends View {
     private final static int DEFAULT_ICON_LEFT_PADDING = 10; //DP
     private final static int DEFAULT_ICON_RIGHT_PADDING = 10; //DP
     private final static int DEFAULT_ICON = R.drawable.ic_smile;
+    private final static int DEFAULT_TEXT_COLOR = R.color.white;
+    private final static int DEFAULT_TEXT_SIZE = 20; // DP
 
     private Context context;
     private int circleRadius; //pixels
@@ -41,10 +43,17 @@ public class CircularView extends View {
     private Drawable iconDrawable;
     private int icon;
 
+
     private int iconTopPadding; //pixels
     private int iconBottomPadding; //pixels
     private int iconLeftPadding; //pixels
     private int iconRightPadding; //pixels
+
+    private String text;
+    private int textColor;
+    private int textSize; //pixels
+
+
     private Paint paint;
 
     public CircularView(Context context) {
@@ -84,6 +93,10 @@ public class CircularView extends View {
             iconBottomPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconBottomPadding, dpToPx(DEFAULT_ICON_BOTTOM_PADDING));
             iconLeftPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconLeftPadding, dpToPx(DEFAULT_ICON_LEFT_PADDING));
             iconRightPadding = a.getDimensionPixelSize(R.styleable.CircularView_cv_iconRightPadding, dpToPx(DEFAULT_ICON_RIGHT_PADDING));
+
+            text = a.getString(R.styleable.CircularView_cv_text);
+            textColor = a.getColor(R.styleable.CircularView_cv_textColor, ContextCompat.getColor(this.context, DEFAULT_TEXT_COLOR));
+            textSize = a.getDimensionPixelSize(R.styleable.CircularView_cv_textSize, dpToPx(DEFAULT_TEXT_SIZE));
         }finally {
             a.recycle();
         }
@@ -141,7 +154,12 @@ public class CircularView extends View {
         int viewHeightHalf = this.getHeight() / 2;
 
         drawCircle(canvas, circleRadius, viewWidthHalf, viewHeightHalf);
-        drawIcon(canvas);
+
+        if(icon != 0){
+            drawIcon(canvas);
+        }else if(text != null && !text.isEmpty()){
+            drawText(canvas);
+        }
     }
 
     private void drawCircle(Canvas canvas, int radius, int width, int height){
@@ -177,6 +195,23 @@ public class CircularView extends View {
             iconDrawable.setBounds(bounds);
             iconDrawable.mutate().setColorFilter(iconColor, PorterDuff.Mode.SRC_IN);
             iconDrawable.draw(canvas);
+        }
+    }
+
+    private void drawText(Canvas canvas){
+        if(!text.isEmpty()){
+            paint.setTextSize(textSize);
+            paint.setColor(textColor);
+            paint.setTextAlign(Paint.Align.CENTER);
+
+
+            Paint.FontMetrics metrics = paint.getFontMetrics();
+            float height = Math.abs(metrics.top - metrics.bottom);
+            float x = getWidth() / 2;
+            float y = (getHeight() / 2) + (height / 4);
+
+            canvas.drawText(text, x, y, paint);
+            canvas.restore();
         }
     }
 
@@ -511,6 +546,33 @@ public class CircularView extends View {
      */
     public void setIconRightPaddingInPX(int px) {
         this.iconRightPadding = px;
+        invalidate();
+    }
+
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public int getTextColor() {
+        return textColor;
+    }
+
+    public void setTextColor(int textColor) {
+        this.textColor = ContextCompat.getColor(getContext(), textColor);
+        invalidate();
+    }
+
+    public int getTextSize() {
+        return pxToDp(textSize);
+    }
+
+    public void setTextSize(int dp) {
+        this.textSize = dpToPx(dp);
         invalidate();
     }
 

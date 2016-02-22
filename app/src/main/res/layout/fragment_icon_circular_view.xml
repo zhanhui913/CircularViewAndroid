@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".IconCircularViewFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:layout_gravity="center_horizontal">
+
+        <com.zhan.library.CircularView
+            android:id="@+id/circularView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/circleRadiusText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Circle Radius"/>
+
+                <SeekBar
+                    android:id="@+id/circleRadiusSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/circleRadiusText"
+                    android:layout_toLeftOf="@+id/circleRadiusValue"/>
+
+                <TextView
+                    android:id="@+id/circleRadiusValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/strokeWidthText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Stroke Width"/>
+
+                <SeekBar
+                    android:id="@+id/strokeWidthSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/strokeWidthText"
+                    android:layout_toLeftOf="@+id/strokeWidthValue"/>
+
+                <TextView
+                    android:id="@+id/strokeWidthValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/strokePaddingText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Stroke Padding"/>
+
+                <SeekBar
+                    android:id="@+id/strokePaddingSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/strokePaddingText"
+                    android:layout_toLeftOf="@+id/strokePaddingValue"/>
+
+                <TextView
+                    android:id="@+id/strokePaddingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/topPaddingText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Top Padding"/>
+
+                <SeekBar
+                    android:id="@+id/topPaddingSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/topPaddingText"
+                    android:layout_toLeftOf="@+id/topPaddingValue"/>
+
+                <TextView
+                    android:id="@+id/topPaddingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/bottomPaddingText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bottom Padding"/>
+
+                <SeekBar
+                    android:id="@+id/bottomPaddingSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/bottomPaddingText"
+                    android:layout_toLeftOf="@+id/bottomPaddingValue"/>
+
+                <TextView
+                    android:id="@+id/bottomPaddingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/leftPaddingText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Left Padding"/>
+
+                <SeekBar
+                    android:id="@+id/leftPaddingSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/leftPaddingText"
+                    android:layout_toLeftOf="@+id/leftPaddingValue"/>
+
+                <TextView
+                    android:id="@+id/leftPaddingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/rightPaddingText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Right Padding"/>
+
+                <SeekBar
+                    android:id="@+id/rightPaddingSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/rightPaddingText"
+                    android:layout_toLeftOf="@+id/rightPaddingValue"/>
+
+                <TextView
+                    android:id="@+id/rightPaddingValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/iconButton1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.33"
+                    android:src="@drawable/white"/>
+
+                <ImageButton
+                    android:id="@+id/iconButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.33"
+                    android:src="@drawable/c_bowtie"/>
+
+                <ImageButton
+                    android:id="@+id/iconButton3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.33"
+                    android:src="@drawable/c_camera"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

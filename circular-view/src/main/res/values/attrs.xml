@@ -12,5 +12,8 @@
         <attr name="cv_iconBottomPadding" format="dimension"/>
         <attr name="cv_iconLeftPadding" format="dimension"/>
         <attr name="cv_iconRightPadding" format="dimension"/>
+        <attr name="cv_text" format="string"/>
+        <attr name="cv_textColor" format="color"/>
+        <attr name="cv_textSize" format="dimension"/>
     </declare-styleable>
 </resources>
