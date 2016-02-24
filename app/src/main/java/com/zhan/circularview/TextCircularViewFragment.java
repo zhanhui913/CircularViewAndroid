@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -29,7 +29,7 @@ public class TextCircularViewFragment extends Fragment {
     private TextView strokeWidthValue, strokePaddingValue;
     private TextView circleRadiusValue;
 
-    private ImageButton button1, button2, button3;
+    private Button button1, button2, button3;
 
     public TextCircularViewFragment() {
         // Required empty public constructor
@@ -74,9 +74,9 @@ public class TextCircularViewFragment extends Fragment {
         strokePaddingSlider = (SeekBar) view.findViewById(R.id.strokePaddingSlider);
         circleRadiusSlider = (SeekBar) view.findViewById(R.id.circleRadiusSlider);
 
-        button1 = (ImageButton) view.findViewById(R.id.iconButton1);
-        button2 = (ImageButton) view.findViewById(R.id.iconButton2);
-        button3 = (ImageButton) view.findViewById(R.id.iconButton3);
+        button1 = (Button) view.findViewById(R.id.iconButton1);
+        button2 = (Button) view.findViewById(R.id.iconButton2);
+        button3 = (Button) view.findViewById(R.id.iconButton3);
 
         //default icon padding is 10dp
         topSlider.setProgress(10);
@@ -226,21 +226,21 @@ public class TextCircularViewFragment extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                circularView.setIconResource(R.drawable.white);
+                circularView.setText("4");
             }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                circularView.setIconResource(R.drawable.c_bowtie);
+                circularView.setText("Z");
             }
         });
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                circularView.setIconResource(R.drawable.c_camera);
+                circularView.setText("a");
             }
         });
     }

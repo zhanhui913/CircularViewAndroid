@@ -8,6 +8,8 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.ColorRes;
+import android.support.annotation.DrawableRes;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.res.ResourcesCompat;
 import android.util.AttributeSet;
@@ -273,7 +275,7 @@ public class CircularView extends View {
      * Set the circle's background color using R.color format
      * @param circleColor the intended new circle background color
      */
-    public void setCircleColor( int circleColor) {
+    public void setCircleColor(@ColorRes int circleColor) {
         this.circleColor = ContextCompat.getColor(getContext(), circleColor);
         invalidate();
     }
@@ -330,7 +332,7 @@ public class CircularView extends View {
      * Set the circle's stroke color using R.color format
      * @param strokeColor the intended new circle stroke color
      */
-    public void setStrokeColor(int strokeColor) {
+    public void setStrokeColor(@ColorRes int strokeColor) {
         this.strokeColor = ContextCompat.getColor(getContext(), strokeColor);
         invalidate();
     }
@@ -387,7 +389,7 @@ public class CircularView extends View {
      * Set the icon color using R.color format
      * @param iconColor the intended new icon color
      */
-    public void setIconColor(int iconColor) {
+    public void setIconColor(@ColorRes int iconColor) {
         this.iconColor = ContextCompat.getColor(getContext(), iconColor);
         invalidate();
     }
@@ -404,7 +406,7 @@ public class CircularView extends View {
      * Set the icon resource using R.drawable format
      * @param icon the intended new icon resource
      */
-    public void setIconResource(int icon){
+    public void setIconResource(@DrawableRes int icon){
         this.icon = icon;
         invalidate();
     }
@@ -549,6 +551,9 @@ public class CircularView extends View {
         invalidate();
     }
 
+    //////////////////////////////////////////////////////
+    // Text
+    //////////////////////////////////////////////////////
 
     public String getText() {
         return text;
@@ -556,13 +561,14 @@ public class CircularView extends View {
 
     public void setText(String text) {
         this.text = text;
+        invalidate();
     }
 
     public int getTextColor() {
         return textColor;
     }
 
-    public void setTextColor(int textColor) {
+    public void setTextColor(@ColorRes int textColor) {
         this.textColor = ContextCompat.getColor(getContext(), textColor);
         invalidate();
     }

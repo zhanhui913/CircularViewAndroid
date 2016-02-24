@@ -247,26 +247,26 @@
                 android:weightSum="1"
                 android:orientation="horizontal">
 
-                <ImageButton
+                <Button
                     android:id="@+id/iconButton1"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.33"
-                    android:src="@drawable/white"/>
+                    android:text="4"/>
 
-                <ImageButton
+                <Button
                     android:id="@+id/iconButton2"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.33"
-                    android:src="@drawable/c_bowtie"/>
+                    android:text="Z"/>
 
-                <ImageButton
+                <Button
                     android:id="@+id/iconButton3"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="0.33"
-                    android:src="@drawable/c_camera"/>
+                    android:text="a"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
