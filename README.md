@@ -13,7 +13,7 @@ Gradle
 
 ```groovy
     dependencies {
-      compile 'com.github.zhanhui913:circular-view:0.2.1'
+      compile 'com.github.zhanhui913:circular-view:0.3.0'
     }
 ```
     
@@ -24,7 +24,7 @@ Maven
 <dependency>
   <groupId>com.github.zhanhui913</groupId>
   <artifactId>circular-view</artifactId>
-  <version>0.2.1</version>
+  <version>0.3.0</version>
 </dependency>
 
 ```
@@ -52,7 +52,10 @@ Include 'com.zhan.library.CircularView' in your layout
     custom:cv_iconTopPadding="dimension"
     custom:cv_iconBottomPadding="dimension"
     custom:cv_iconLeftPadding="dimension"
-    custom:cv_iconRightPadding="dimension"/>
+    custom:cv_iconRightPadding="dimension"
+    custom:cv_text="string"
+    custom:cv_textColor="color"
+    custom:cv_textSize="dimension"/>
 
 ```
 
@@ -83,6 +86,13 @@ void setIconLeftPadding(int value)
 int getIconLeftPadding()
 void setIconRightPadding(int value)
 int getIconRightPadding()
+
+void setText(String value)
+String getText()
+void setTextColor(int color);
+int getTextColor();
+void setTextSize(int size);
+int getTextSize();
 ```
 
 
