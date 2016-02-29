@@ -21,11 +21,11 @@ public class TextCircularViewFragment extends Fragment {
     private View view;
     private CircularView circularView;
 
-    private SeekBar topSlider, bottomSlider, leftSlider, rightSlider;
+    private SeekBar textSizeSlider;
     private SeekBar strokeWidthSlider, strokePaddingSlider;
     private SeekBar circleRadiusSlider;
 
-    private TextView topPaddingValue, bottomPaddingValue, leftPaddingValue, rightPaddingValue;
+    private TextView textSizeValue;
     private TextView strokeWidthValue, strokePaddingValue;
     private TextView circleRadiusValue;
 
@@ -58,18 +58,12 @@ public class TextCircularViewFragment extends Fragment {
         circularView.setTextSize(50);
         circularView.setText("5");
 
-        topPaddingValue = (TextView) view.findViewById(R.id.topPaddingValue);
-        bottomPaddingValue = (TextView) view.findViewById(R.id.bottomPaddingValue);
-        leftPaddingValue = (TextView) view.findViewById(R.id.leftPaddingValue);
-        rightPaddingValue = (TextView) view.findViewById(R.id.rightPaddingValue);
+        textSizeValue = (TextView) view.findViewById(R.id.textSizeValue);
         strokeWidthValue = (TextView) view.findViewById(R.id.strokeWidthValue);
         strokePaddingValue = (TextView) view.findViewById(R.id.strokePaddingValue);
         circleRadiusValue = (TextView) view.findViewById(R.id.circleRadiusValue);
 
-        topSlider = (SeekBar) view.findViewById(R.id.topPaddingSlider);
-        bottomSlider = (SeekBar) view.findViewById(R.id.bottomPaddingSlider);
-        leftSlider = (SeekBar) view.findViewById(R.id.leftPaddingSlider);
-        rightSlider = (SeekBar) view.findViewById(R.id.rightPaddingSlider);
+        textSizeSlider = (SeekBar) view.findViewById(R.id.textSizeSlider);
         strokeWidthSlider = (SeekBar) view.findViewById(R.id.strokeWidthSlider);
         strokePaddingSlider = (SeekBar) view.findViewById(R.id.strokePaddingSlider);
         circleRadiusSlider = (SeekBar) view.findViewById(R.id.circleRadiusSlider);
@@ -78,84 +72,23 @@ public class TextCircularViewFragment extends Fragment {
         button2 = (Button) view.findViewById(R.id.iconButton2);
         button3 = (Button) view.findViewById(R.id.iconButton3);
 
-        //default icon padding is 10dp
-        topSlider.setProgress(10);
-        bottomSlider.setProgress(10);
-        leftSlider.setProgress(10);
-        rightSlider.setProgress(10);
+        textSizeSlider.setProgress(20);
         strokeWidthSlider.setProgress(0);
         strokePaddingSlider.setProgress(0);
         circleRadiusSlider.setProgress(50);
 
-        topPaddingValue.setText("10");
-        bottomPaddingValue.setText("10");
-        leftPaddingValue.setText("10");
-        rightPaddingValue.setText("10");
+        textSizeValue.setText("20");
         strokeWidthValue.setText("0");
         strokePaddingValue.setText("0");
         circleRadiusValue.setText("50");
     }
 
     private void addListeners(){
-        topSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        textSizeSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setIconTopPaddingInDP(progress);
-                topPaddingValue.setText(""+progress);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        bottomSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setIconBottomPaddingInDP(progress);
-                bottomPaddingValue.setText(""+progress);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        leftSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setIconLeftPaddingInDP(progress);
-                leftPaddingValue.setText(""+progress);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        rightSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setIconRightPaddingInDP(progress);
-                rightPaddingValue.setText(""+progress);
+                circularView.setTextSize(progress);
+                textSizeValue.setText(""+progress);
             }
 
             @Override

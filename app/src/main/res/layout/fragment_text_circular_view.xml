@@ -133,107 +133,20 @@
                 android:paddingRight="15dp">
 
                 <TextView
-                    android:id="@+id/topPaddingText"
+                    android:id="@+id/textSize"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:text="Top Padding"/>
+                    android:text="Text Size"/>
 
                 <SeekBar
-                    android:id="@+id/topPaddingSlider"
+                    android:id="@+id/textSizeSlider"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/topPaddingText"
-                    android:layout_toLeftOf="@+id/topPaddingValue"/>
+                    android:layout_toRightOf="@+id/textSize"
+                    android:layout_toLeftOf="@+id/textSizeValue"/>
 
                 <TextView
-                    android:id="@+id/topPaddingValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5"
-                    android:textStyle="bold"
-                    android:layout_alignParentRight="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="15dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp">
-
-                <TextView
-                    android:id="@+id/bottomPaddingText"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="Bottom Padding"/>
-
-                <SeekBar
-                    android:id="@+id/bottomPaddingSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/bottomPaddingText"
-                    android:layout_toLeftOf="@+id/bottomPaddingValue"/>
-
-                <TextView
-                    android:id="@+id/bottomPaddingValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5"
-                    android:textStyle="bold"
-                    android:layout_alignParentRight="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="15dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp">
-
-                <TextView
-                    android:id="@+id/leftPaddingText"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="Left Padding"/>
-
-                <SeekBar
-                    android:id="@+id/leftPaddingSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/leftPaddingText"
-                    android:layout_toLeftOf="@+id/leftPaddingValue"/>
-
-                <TextView
-                    android:id="@+id/leftPaddingValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5"
-                    android:textStyle="bold"
-                    android:layout_alignParentRight="true" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="15dp"
-                android:paddingLeft="15dp"
-                android:paddingRight="15dp">
-
-                <TextView
-                    android:id="@+id/rightPaddingText"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="Right Padding"/>
-
-                <SeekBar
-                    android:id="@+id/rightPaddingSlider"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/rightPaddingText"
-                    android:layout_toLeftOf="@+id/rightPaddingValue"/>
-
-                <TextView
-                    android:id="@+id/rightPaddingValue"
+                    android:id="@+id/textSizeValue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5"
