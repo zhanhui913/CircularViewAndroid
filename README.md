@@ -1,5 +1,6 @@
 # CircularViewAndroid
 A custom view for Circular view for android with possibility to add circle stroke and icons. <br/>
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PMD-blue.svg?style=flat)](http://android-arsenal.com/details/1/443)
 
 **Author**: Zhan Yap<br/>
 **License** : MIT
