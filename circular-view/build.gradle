@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/zhanhui913/CircularViewAndroid'
     gitUrl = 'https://github.com/zhanhui913/CircularViewAndroid.git'
 
-    libraryVersion = '0.2.1'
+    libraryVersion = '0.3.0'
 
     developerId = 'zhanhui913'
     developerName = 'Zhan Yap'
