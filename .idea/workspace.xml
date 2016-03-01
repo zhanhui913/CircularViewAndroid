@@ -16,6 +16,8 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="valida" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
@@ -34,49 +36,68 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="CircularViewAndroid" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CircularView.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CircularView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.82634145">
+              <caret line="692" column="5" selection-start-line="692" selection-start-column="5" selection-end-line="692" selection-end-column="5" />
               <folding>
-                <element signature="method#init#0;class#CircularView#0" expanded="false" />
                 <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-                <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-                <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
                 <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
                 <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+                <element signature="e#9244#9245#0" expanded="true" />
+                <element signature="e#9287#9288#0" expanded="true" />
+                <element signature="e#9425#9426#0" expanded="true" />
+                <element signature="e#9465#9466#0" expanded="true" />
+                <element signature="e#10136#10137#0" expanded="true" />
+                <element signature="e#10170#10171#0" expanded="true" />
+                <element signature="e#10323#10324#0" expanded="true" />
+                <element signature="e#10381#10382#0" expanded="true" />
+                <element signature="e#11269#11270#0" expanded="true" />
+                <element signature="e#11311#11312#0" expanded="true" />
+                <element signature="e#11461#11462#0" expanded="true" />
+                <element signature="e#11500#11501#0" expanded="true" />
+                <element signature="e#12176#12177#0" expanded="true" />
+                <element signature="e#12210#12211#0" expanded="true" />
+                <element signature="e#12359#12360#0" expanded="true" />
+                <element signature="e#12417#12418#0" expanded="true" />
+                <element signature="e#14267#14268#0" expanded="true" />
+                <element signature="e#14299#14300#0" expanded="true" />
+                <element signature="e#14437#14438#0" expanded="true" />
+                <element signature="e#14493#14494#0" expanded="true" />
+                <element signature="e#19397#19398#0" expanded="true" />
+                <element signature="e#19424#19425#0" expanded="true" />
+                <element signature="e#19747#19748#0" expanded="true" />
+                <element signature="e#19779#19780#0" expanded="true" />
+                <element signature="e#19917#19918#0" expanded="true" />
+                <element signature="e#19973#19974#0" expanded="true" />
+                <element signature="e#20626#20627#0" expanded="true" />
+                <element signature="e#20665#20666#0" expanded="true" />
+                <element signature="e#20788#20789#0" expanded="true" />
+                <element signature="e#20819#20820#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/circular-view/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2195122">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextCircularViewFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularViewFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <element signature="class#2888:3369" expanded="false" />
-                <element signature="class#3430:3921" expanded="false" />
-                <element signature="class#3984:4479" expanded="false" />
-                <element signature="class#4541:5034" expanded="false" />
-              </folding>
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -536,9 +557,9 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.github.zhanhui913:circular-view:0.3.0" />
+                <option name="description" value="Prepare com.github.zhanhui913:circular-view:0.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComGithubZhanhui913CircularView030Library" />
+                <option name="name" value="prepareComGithubZhanhui913CircularView040Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1197,9 +1218,9 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42311Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.github.zhanhui913:circular-view:0.3.0" />
+                <option name="description" value="Prepare com.github.zhanhui913:circular-view:0.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComGithubZhanhui913CircularView030Library" />
+                <option name="name" value="prepareComGithubZhanhui913CircularView040Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1997,7 +2018,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5824203944000" />
+        <entry key="$PROJECT_DIR$" value="5824290138000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2536,10 +2557,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/IconCircularViewFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/MainActivity.java" />
-        <option value="$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_text_circular_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularViewFragment.java" />
+        <option value="$PROJECT_DIR$/circular-view/src/main/res/values/color.xml" />
         <option value="$PROJECT_DIR$/circular-view/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularViewFragment.java" />
+        <option value="$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java" />
       </list>
     </option>
   </component>
@@ -2575,7 +2597,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2610,9 +2634,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2809,7 +2831,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2817,15 +2839,15 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28416988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18687259" sideWeight="0.49730563" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18687259" sideWeight="0.49730563" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20554273" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299923" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Mirror" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2838,7 +2860,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299923" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2860,14 +2882,103 @@
     <entry file="file://$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="411" column="5" selection-start-line="411" selection-start-column="5" selection-end-line="411" selection-end-column="5" />
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="46" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
             <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circular-view/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularViewFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="class#3751:4242" expanded="false" />
+            <element signature="class#4305:4800" expanded="false" />
+            <element signature="class#4862:5355" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="411" column="5" selection-start-line="411" selection-start-column="5" selection-end-line="411" selection-end-column="5" />
+          <folding>
+            <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
+            <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
+            <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2909,10 +3020,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
           <folding>
-            <element signature="class#2888:3369" expanded="false" />
-            <element signature="class#3430:3921" expanded="false" />
-            <element signature="class#3984:4479" expanded="false" />
-            <element signature="class#4541:5034" expanded="false" />
+            <element signature="class#3751:4242" expanded="false" />
+            <element signature="class#4305:4800" expanded="false" />
+            <element signature="class#4862:5355" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2922,12 +3032,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
             <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2961,10 +3098,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
           <folding>
-            <element signature="class#2888:3369" expanded="false" />
-            <element signature="class#3430:3921" expanded="false" />
-            <element signature="class#3984:4479" expanded="false" />
-            <element signature="class#4541:5034" expanded="false" />
+            <element signature="class#3751:4242" expanded="false" />
+            <element signature="class#4305:4800" expanded="false" />
+            <element signature="class#4862:5355" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2974,12 +3110,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="552" column="0" selection-start-line="552" selection-start-column="0" selection-end-line="552" selection-end-column="0" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
             <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3013,10 +3176,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="class#2888:3369" expanded="false" />
-            <element signature="class#3430:3921" expanded="false" />
-            <element signature="class#3984:4479" expanded="false" />
-            <element signature="class#4541:5034" expanded="false" />
+            <element signature="class#3751:4242" expanded="false" />
+            <element signature="class#4305:4800" expanded="false" />
+            <element signature="class#4862:5355" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3026,12 +3188,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="372" column="25" selection-start-line="372" selection-start-column="25" selection-end-line="372" selection-end-column="25" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
             <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3054,12 +3243,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
             <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3077,12 +3293,39 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="176" column="0" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
             <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
             <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3173,22 +3416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/IconCircularViewFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6674082">
-          <caret line="80" column="34" selection-start-line="79" selection-start-column="38" selection-end-line="80" selection-end-column="34" />
-          <folding>
-            <element signature="class#3724:4217" expanded="false" />
-            <element signature="class#4273:4772" expanded="false" />
-            <element signature="class#4826:5321" expanded="false" />
-            <element signature="class#5376:5873" expanded="false" />
-            <element signature="class#5934:6425" expanded="false" />
-            <element signature="class#6488:6983" expanded="false" />
-            <element signature="class#7045:7538" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_icon_circular_view.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -3221,19 +3448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularViewFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="class#2888:3369" expanded="false" />
-            <element signature="class#3430:3921" expanded="false" />
-            <element signature="class#3984:4479" expanded="false" />
-            <element signature="class#4541:5034" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3250,26 +3464,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="46" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/IconCircularViewFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66785717">
+          <caret line="80" column="34" selection-start-line="79" selection-start-column="38" selection-end-line="80" selection-end-column="34" />
           <folding>
-            <element signature="method#init#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
-            <element signature="method#onDraw#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawCircle#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
-            <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="class#3724:4217" expanded="false" />
+            <element signature="class#4273:4772" expanded="false" />
+            <element signature="class#4826:5321" expanded="false" />
+            <element signature="class#5376:5873" expanded="false" />
+            <element signature="class#5934:6425" expanded="false" />
+            <element signature="class#6488:6983" expanded="false" />
+            <element signature="class#7045:7538" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circular-view/src/main/res/values/color.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2836485">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circular-view/src/androidTest/java/com/zhan/library/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11679644">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/sdk/sources/android-23/android/graphics/Paint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.5050056">
+          <caret line="791" column="23" selection-start-line="791" selection-start-column="23" selection-end-line="791" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/sdk/sources/android-23/android/graphics/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33259177">
+          <caret line="217" column="22" selection-start-line="217" selection-start-column="22" selection-end-line="217" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/zhan/circularview/TextCircularViewFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.516129">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="class#3751:4242" expanded="false" />
+            <element signature="class#4305:4800" expanded="false" />
+            <element signature="class#4862:5355" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/circular-view/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2195122">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circular-view/src/main/java/com/zhan/library/CircularView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82634145">
+          <caret line="692" column="5" selection-start-line="692" selection-start-column="5" selection-end-line="692" selection-end-column="5" />
+          <folding>
+            <element signature="method#onMeasure#0;class#CircularView#0" expanded="false" />
+            <element signature="method#drawIcon#0;class#CircularView#0" expanded="false" />
+            <element signature="method#drawText#0;class#CircularView#0" expanded="false" />
+            <element signature="e#9244#9245#0" expanded="true" />
+            <element signature="e#9287#9288#0" expanded="true" />
+            <element signature="e#9425#9426#0" expanded="true" />
+            <element signature="e#9465#9466#0" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+            <element signature="e#10170#10171#0" expanded="true" />
+            <element signature="e#10323#10324#0" expanded="true" />
+            <element signature="e#10381#10382#0" expanded="true" />
+            <element signature="e#11269#11270#0" expanded="true" />
+            <element signature="e#11311#11312#0" expanded="true" />
+            <element signature="e#11461#11462#0" expanded="true" />
+            <element signature="e#11500#11501#0" expanded="true" />
+            <element signature="e#12176#12177#0" expanded="true" />
+            <element signature="e#12210#12211#0" expanded="true" />
+            <element signature="e#12359#12360#0" expanded="true" />
+            <element signature="e#12417#12418#0" expanded="true" />
+            <element signature="e#14267#14268#0" expanded="true" />
+            <element signature="e#14299#14300#0" expanded="true" />
+            <element signature="e#14437#14438#0" expanded="true" />
+            <element signature="e#14493#14494#0" expanded="true" />
+            <element signature="e#19397#19398#0" expanded="true" />
+            <element signature="e#19424#19425#0" expanded="true" />
+            <element signature="e#19747#19748#0" expanded="true" />
+            <element signature="e#19779#19780#0" expanded="true" />
+            <element signature="e#19917#19918#0" expanded="true" />
+            <element signature="e#19973#19974#0" expanded="true" />
+            <element signature="e#20626#20627#0" expanded="true" />
+            <element signature="e#20665#20666#0" expanded="true" />
+            <element signature="e#20788#20789#0" expanded="true" />
+            <element signature="e#20819#20820#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

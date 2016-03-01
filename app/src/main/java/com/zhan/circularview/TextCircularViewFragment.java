@@ -3,6 +3,7 @@ package com.zhan.circularview;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,10 +54,15 @@ public class TextCircularViewFragment extends Fragment {
 
     private void init(){
         circularView = (CircularView) view.findViewById(R.id.circularView);
-        circularView.setCircleColor(R.color.green);
+        circularView.setCircleColor(R.color.lightPurple);
+        Log.d("ZHAN", "1 after setting circle color -> " + circularView.getCircleColorHex());
+
+        circularView.setCircleColor("#e76558");
+        Log.d("ZHAN","2 after setting circle color -> "+circularView.getCircleColorHex());
         circularView.setTextColor(R.color.purple);
-        circularView.setTextSize(50);
+        circularView.setTextSizeInDP(50);
         circularView.setText("5");
+        circularView.setTextColor("#ffffffff");
 
         textSizeValue = (TextView) view.findViewById(R.id.textSizeValue);
         strokeWidthValue = (TextView) view.findViewById(R.id.strokeWidthValue);
@@ -87,7 +93,7 @@ public class TextCircularViewFragment extends Fragment {
         textSizeSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                circularView.setTextSize(progress);
+                circularView.setTextSizeInDP(progress);
                 textSizeValue.setText(""+progress);
             }
 

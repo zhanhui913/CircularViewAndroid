@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.Rect;
@@ -272,11 +273,28 @@ public class CircularView extends View {
     }
 
     /**
+     * Retrieve the circle's background color in hex format
+     * @return hex format in string
+     */
+    public String getCircleColorHex() {
+        return String.format("#%08X", circleColor);
+    }
+
+    /**
      * Set the circle's background color using R.color format
      * @param circleColor the intended new circle background color
      */
     public void setCircleColor(@ColorRes int circleColor) {
         this.circleColor = ContextCompat.getColor(getContext(), circleColor);
+        invalidate();
+    }
+
+    /**
+     * Set the circle's background color using hex format
+     * @param circleColor the intended new circle background color
+     */
+    public void setCircleColor(String circleColor){
+        this.circleColor = Color.parseColor(validateHex(circleColor));
         invalidate();
     }
 
@@ -329,11 +347,28 @@ public class CircularView extends View {
     }
 
     /**
+     * Retrieve the circle's stroke color in hex format
+     * @return hex format in String
+     */
+    public String getStrokeColorHex() {
+        return String.format("#%08X", strokeColor);
+    }
+
+    /**
      * Set the circle's stroke color using R.color format
      * @param strokeColor the intended new circle stroke color
      */
     public void setStrokeColor(@ColorRes int strokeColor) {
         this.strokeColor = ContextCompat.getColor(getContext(), strokeColor);
+        invalidate();
+    }
+
+    /**
+     * Set the circle's stroke color using R.color format
+     * @param strokeColor the intended new circle stroke color
+     */
+    public void setStrokeColor(String strokeColor){
+        this.strokeColor = Color.parseColor(validateHex(strokeColor));
         invalidate();
     }
 
@@ -386,11 +421,28 @@ public class CircularView extends View {
     }
 
     /**
+     * Retrieve the icon's color in hex format
+     * @return hex format in string
+     */
+    public String getIconColorHex() {
+        return String.format("#%08X", iconColor);
+    }
+
+    /**
      * Set the icon color using R.color format
      * @param iconColor the intended new icon color
      */
     public void setIconColor(@ColorRes int iconColor) {
         this.iconColor = ContextCompat.getColor(getContext(), iconColor);
+        invalidate();
+    }
+
+    /**
+     * Set the icon color using hex format
+     * @param iconColor the intended new icon color
+     */
+    public void setIconColor(String iconColor) {
+        this.iconColor = Color.parseColor(validateHex(iconColor));
         invalidate();
     }
 
@@ -555,30 +607,88 @@ public class CircularView extends View {
     // Text
     //////////////////////////////////////////////////////
 
+    /**
+     * Retrieve the text value
+     * @return text
+     */
     public String getText() {
         return text;
     }
 
+    /**
+     * Set the text value
+     * @param text the intended new text value
+     */
     public void setText(String text) {
         this.text = text;
         invalidate();
     }
 
+    /**
+     * Retrieve the text's color in R.color format
+     * @return R.color format in string
+     */
     public int getTextColor() {
         return textColor;
     }
 
+    /**
+     * Retrieve the text's color in hex format
+     * @return hex format in string
+     */
+    public String getTextColorHex() {
+        return String.format("#%08X", textColor);
+    }
+
+    /**
+     * Set the text color using R.color format
+     * @param textColor the intended new text color
+     */
     public void setTextColor(@ColorRes int textColor) {
         this.textColor = ContextCompat.getColor(getContext(), textColor);
         invalidate();
     }
 
-    public int getTextSize() {
+    /**
+     * Set the text color using hex format
+     * @param textColor the intended new text color
+     */
+    public void setTextColor(String textColor) {
+        this.textColor = Color.parseColor(validateHex(textColor));
+        invalidate();
+    }
+
+    /**
+     * Retrieve the text size in DP
+     * @return the text size in DP
+     */
+    public int getTextSizeInDP() {
         return pxToDp(textSize);
     }
 
-    public void setTextSize(int dp) {
+    /**
+     * Retrieve the text size in PX
+     * @return the text size in PX
+     */
+    public int getTextSizeInPX() {
+        return textSize;
+    }
+
+    /**
+     * Set the text size using dp format
+     * @param dp the intended new text size in dp format
+     */
+    public void setTextSizeInDP(int dp) {
         this.textSize = dpToPx(dp);
+        invalidate();
+    }
+
+    /**
+     * Set the text size using px format
+     * @param px the intended new text size in px format
+     */
+    public void setTextSizeInPX(int px) {
+        this.textSize = px;
         invalidate();
     }
 
@@ -594,5 +704,11 @@ public class CircularView extends View {
 
     private int pxToDp(int px) {
         return (int) (px / Resources.getSystem().getDisplayMetrics().density);
+    }
+
+    private String validateHex(String hex){
+        //String s = String.format("#%08X", Long.parseLong(hex.replace("#",""), 16));
+        //Log.d("VALIDATE_HEX", hex+" -> "+s);
+        return hex;
     }
 }
