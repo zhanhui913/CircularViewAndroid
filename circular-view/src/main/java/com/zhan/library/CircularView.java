@@ -214,7 +214,7 @@ public class CircularView extends View {
             float y = (getHeight() / 2) + (height / 4);
 
             canvas.drawText(text, x, y, paint);
-            canvas.restore();
+            canvas.save();
         }
     }
 
