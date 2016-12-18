@@ -21,7 +21,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="false"
-            android:layout_alignParentLeft="false" />
+            android:layout_alignParentLeft="false"
+            app:cv_bgColor="@color/colorPrimary"
+            app:cv_iconDrawable="@drawable/c_airplane"
+            app:cv_iconColor="@color/red"/>
     </RelativeLayout>
 
     <View
