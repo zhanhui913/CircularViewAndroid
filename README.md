@@ -48,7 +48,7 @@ Include 'com.zhan.library.CircularView' in your layout
     custom:cv_strokeWidth="dimension"
     custom:cv_strokePadding="dimension"
     custom:cv_strokeColor="color"
-    custom:cv_iconDrawable="drawable"
+    custom:cv_iconDrawable="int"
     custom:cv_iconColor="color"
     custom:cv_iconTopPadding="dimension"
     custom:cv_iconBottomPadding="dimension"
@@ -76,8 +76,8 @@ int getStrokeColor()
 
 void setIconColor(int color)
 int getIconColor()
-void setIconDrawable(drawable ic)
-Drawable getIconDrawable()
+void setIconResource(int ic)
+Drawable getIconResource()
 
 void setIconTopPadding(int value)
 int getIconTopPadding()
