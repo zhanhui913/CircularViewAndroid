@@ -14,7 +14,7 @@ Gradle
 
 ```groovy
     dependencies {
-      compile 'com.github.zhanhui913:circular-view:0.4.1'
+      compile 'com.github.zhanhui913:circular-view:0.4.2'
     }
 ```
     
