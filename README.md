@@ -25,7 +25,7 @@ Maven
 <dependency>
   <groupId>com.github.zhanhui913</groupId>
   <artifactId>circular-view</artifactId>
-  <version>0.4.1</version>
+  <version>0.4.2</version>
 </dependency>
 
 ```
