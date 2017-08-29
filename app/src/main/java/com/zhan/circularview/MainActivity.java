@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Test forking on same master branch.
         //tet changes
+        //Sample buddybuild auto build, testing being forked from
+        //More commits to simulate actual changes, now with SSH
+        //1 more change
     }
 
     @Override
