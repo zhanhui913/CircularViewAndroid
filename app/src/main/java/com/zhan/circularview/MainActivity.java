@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Sample buddybuild auto build, testing versionName #4 with auto push tags
+        //Sample buddybuild auto build, testing being forked from
     }
 
     @Override
