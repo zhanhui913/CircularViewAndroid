@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Sample buddybuild auto build, testing being forked from
-        //More commits to simulate actual changes
+        //More commits to simulate actual changes, now with SSH 
     }
 
     @Override
