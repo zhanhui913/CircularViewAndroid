@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Test forking
+        //Test forking on same master branch.
     }
 
     @Override
